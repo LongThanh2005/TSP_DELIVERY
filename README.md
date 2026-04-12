@@ -1,47 +1,43 @@
-# Master Delivery - Route Optimizer 🚚
+# 🚚 Hệ Thống Tối Ưu Hóa Đường Đi Giao Hàng (TSP Solver)
 
-A smart delivery route optimization tool for Ho Chi Minh City using the **Simulated Annealing** algorithm. This project helps delivery drivers find the most efficient path between multiple wards in HCMC.
+Chào mừng bạn đến với dự án **Master Delivery**! Đây là công cụ giúp các bác tài hoặc người giao hàng tìm ra lộ trình ngắn nhất khi phải đi qua nhiều địa điểm khác nhau trong Thành phố Hồ Chí Minh.
 
-## 🌟 Features
-- **Smart Optimization**: Calculates the shortest route for 14+ delivery locations.
-- **Interactive Maps**: Real-time visualization using Folium and OpenStreetMap.
-- **Modern UI**: Sleek, responsive dashboard built with Streamlit.
-- **Flexible Backend**: FastAPI-powered solver integration.
-- **Data Export**: Export optimized routes to CSV format.
+## 🌟 Dự án này có gì hay?
+- **Tìm đường siêu nhanh**: Sử dụng thuật toán thông minh (Simulated Annealing) để tính toán đường đi ngắn nhất giữa 14+ địa điểm.
+- **Bản đồ trực quan**: Bạn có thể nhìn thấy lộ trình của mình ngay trên bản đồ tương tác.
+- **Dễ sử dụng**: Giao diện đơn giản, hiện đại, ai cũng có thể dùng được.
+- **Xuất dữ liệu**: Tải lộ trình đã tối ưu về máy dưới dạng file Excel/CSV để tiện theo dõi.
 
-## 🛠️ Tech Stack
-- **Frontend**: [Streamlit](https://streamlit.io/)
-- **Backend**: [FastAPI](https://fastapi.tiangolo.com/)
-- **Mapping**: [Folium](https://python-visualization.github.io/folium/)
-- **Algorithm**: Simulated Annealing (Metaheuristic)
-- **Visualization**: Plotly, Pandas
+## 🛠️ Công nghệ sử dụng
+- **Backend (Xử lý)**: FastAPI (Python)
+- **Frontend (Giao diện)**: Streamlit
+- **Bản đồ**: Folium
+- **Dữ liệu**: Pandas, Plotly
 
-## 🚀 Getting Started
+## 🚀 Hướng dẫn cài đặt và chạy (Dành cho người mới)
 
-### Prerequisites
-- Python 3.8+
+### 1. Yêu cầu chuẩn bị
+Máy tính của bạn cần cài sẵn **Python** (phiên bản 3.8 trở lên).
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone <your-repo-url>
-   cd "Dự án AI"
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 2. Cài đặt
+Mở terminal (hoặc Command Prompt) và chạy lệnh sau để cài đặt các thư viện cần thiết:
+```bash
+pip install -r requirements.txt
+```
 
-### Running the Application
-To launch the interactive dashboard:
+### 3. Khởi động ứng dụng
+Để mở giao diện web và bắt đầu sử dụng, bạn chạy lệnh:
 ```bash
 streamlit run backend/ui.py
 ```
+Sau khi chạy, ứng dụng sẽ tự động mở trên trình duyệt web của bạn.
 
-To run the FastAPI backend (optional):
-```bash
-uvicorn backend.main:app --reload
-```
+## 📍 Cách sử dụng
+1. Chọn **Điểm xuất phát** của bạn.
+2. Chọn chế độ: **Giao tất cả địa điểm** hoặc **Chỉ giao một điểm**.
+3. Nhấn nút **Tối ưu hóa** và đợi vài giây.
+4. Xem lộ trình trên bản đồ và danh sách chi tiết bên cạnh.
+5. (Tùy chọn) Nhấn **Tải lộ trình (CSV)** nếu muốn lưu lại.
 
-## 📍 Algorithm Details
-The project uses the **Simulated Annealing** algorithm with a **2-opt swap** neighbor function to efficiently solve the Traveling Salesman Problem (TSP) for delivery points.
+---
+*Chúc bạn có những chuyến giao hàng thuận lợi và nhanh chóng!*
