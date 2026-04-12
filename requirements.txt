@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+streamlit
+folium
+streamlit-folium
+plotly
+pandas
+pydantic
