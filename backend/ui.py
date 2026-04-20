@@ -79,8 +79,8 @@ def main():
         st.divider()
         st.header("⚙️ Tham số tối ưu")
         t0 = st.slider("Nhiệt độ (T0)", 10.0, 500.0, 100.0)
-        alpha = st.slider("Hệ số giảm nhiệt", 0.9, 0.9999, 0.999, 0.0001)
-        max_iter = st.number_input("Số vòng lặp", 1000, 500000, 50000)
+        alpha = st.slider("Hệ số giảm nhiệt (Alpha)", 0.9, 0.9999, 0.9995, 0.0001)
+        max_iter = st.number_input("Số vòng lặp", 1000, 500000, 100000)
         
         if st.button("🚀 Tối ưu hóa toàn bộ lộ trình"):
             run_optimization_all(t0, alpha, max_iter, start_index)
