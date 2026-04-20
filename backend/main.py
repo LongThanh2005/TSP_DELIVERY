@@ -48,7 +48,7 @@ DEFAULT_WARDS = [
 @app.get("/wards")
 def get_wards():
     return DEFAULT_WARDS
-
+    
 @app.post("/optimize")
 def optimize(req: OptimizeRequest):
     wards_data = [w.dict() for w in req.wards]

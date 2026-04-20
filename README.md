@@ -33,11 +33,10 @@ streamlit run backend/ui.py
 Sau khi chạy, ứng dụng sẽ tự động mở trên trình duyệt web của bạn.
 
 ## 📍 Cách sử dụng
-1. Chọn **Điểm xuất phát** của bạn.
-2. Chọn chế độ: **Giao tất cả địa điểm** hoặc **Chỉ giao một điểm**.
-3. Nhấn nút **Tối ưu hóa** và đợi vài giây.
-4. Xem lộ trình trên bản đồ và danh sách chi tiết bên cạnh.
-5. (Tùy chọn) Nhấn **Tải lộ trình (CSV)** nếu muốn lưu lại.
+1. Chọn **Điểm xuất phát** của bạn (Vị trí hiện tại).
+2. Nhấn nút **Tối ưu hóa toàn bộ lộ trình** và đợi vài giây.
+3. Xem lộ trình trên bản đồ và danh sách chi tiết bên cạnh.
+4. (Tùy chọn) Nhấn **Tải lộ trình (CSV)** nếu muốn lưu lại.
 
 ---
 *Chúc bạn có những chuyến giao hàng thuận lợi và nhanh chóng!*
